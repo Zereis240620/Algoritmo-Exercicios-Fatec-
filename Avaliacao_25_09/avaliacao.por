@@ -9,8 +9,7 @@ programa
 	{
 		inteiro continua
 			
-		faca{	
-			//limpa()
+		faca{				
 			exibirMenu()
 			
 			continua = menuOP()
@@ -179,12 +178,16 @@ programa
 	}
 
 	funcao zeroNumberRepeat(){
-		inteiro count, countAux = 0, numberAux[10], nr = 1
-	
+		inteiro count, countAux = 0, numberAux[10]
+
 		para(count = 0; count < 10; count++){															
-			para(countAux = 0; countAux < 10; countAux++){
+			numberAux[count] = numbers[count]		
+		}
+		
+		para(count = 0; count < 10; count++){															
+			para(countAux = 0; countAux < 9; countAux++){
 																			
-				se(numbers[countAux] == numbers[count]){
+				se(numberAux[countAux] == numberAux[count]){
 														
 					numberAux[countAux] = 0
 					
@@ -205,7 +208,7 @@ programa
 		space()
 				
 		
-	}
+	}	
 	
 }
 /* $$$ Portugol Studio $$$ 
@@ -213,7 +216,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2969; 
+ * @POSICAO-CURSOR = 122; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
