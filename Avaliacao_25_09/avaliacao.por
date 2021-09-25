@@ -179,15 +179,12 @@ programa
 
 	funcao zeroNumberRepeat(){
 		inteiro count, countAux = 0, numberAux[10]
-
-		para(count = 0; count < 10; count++){															
-			numberAux[count] = numbers[count]		
-		}
+		
 		
 		para(count = 0; count < 10; count++){															
 			para(countAux = 0; countAux < 9; countAux++){
 																			
-				se(numberAux[countAux] == numberAux[count]){
+				se(numbers[countAux] == numbers[count]){
 														
 					numberAux[countAux] = 0
 					
@@ -216,7 +213,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 122; 
+ * @POSICAO-CURSOR = 3443; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
