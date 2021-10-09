@@ -92,7 +92,7 @@ programa
 	funcao gerarMatriz(inteiro matriz[][]){
 		
 		limpa()
-		escreva("* * * Gerar Matriz * * *\n")
+		escreva("* * * Gerar Matriz Aleatório * * *\n")
 		inteiro linha, coluna, prossiga
 		
 		para(linha =0; linha <= 3;linha++){
@@ -115,7 +115,7 @@ programa
 
 	funcao somarElementosMatriz(inteiro matriz[][]){
 		limpa()
-		escreva("* * Soma de Elemento Matriz * * \n")
+		escreva("* * Somar Todos os Elementos da Matriz * * \n")
 		inteiro sum = 0, sumLine, prossiga
 		
 		para(inteiro linha = 0; linha <= 3; linha++){
@@ -140,7 +140,7 @@ programa
 	funcao subTotLinhas(inteiro matriz[][]){
 		
 		limpa()
-		escreva("* * Subtrair Tota linha 1º e 3º de Elemento Matriz * * \n")
+		escreva("* * Subtrair Total da 1ª linha - total 3ª linha  * * \n")
 		inteiro sumLine[4], prossiga
 		
 		para(inteiro linha = 0; linha <= 3; linha++){			
@@ -164,7 +164,7 @@ programa
 	funcao calcTotParImpar(inteiro matriz[][]){
 
 		limpa()
-		escreva("* * Total de Numeros Pares e Impar * * \n")
+		escreva("* * Calcular Total de Números Pares e Números Ímpares * * \n")
 		
 		inteiro countPar = 0, countImpar = 0, prossiga
 		cadeia  par="", impar=""
@@ -199,7 +199,7 @@ programa
 	funcao mostrarMaior10(inteiro matriz[][]){
 
 		limpa()
-		escreva("* * * Mostrar Quantos Elementos > 10 e Quais São Eles * * * \n")
+		escreva("* * * Mostrar Elementos Maiores Que 10 e Quais São Eles * * * \n")
 		
 		inteiro countMaior = 0, prossiga
 		cadeia  numeros = ""
@@ -229,7 +229,7 @@ programa
 	funcao mostrarMaiorMenor(inteiro matriz[][]){
 
 		limpa()
-		escreva("* * * Mostrar o Maior e o Menor Elemento da Matriz e Suas Posições * * * \n")
+		escreva("* * * Mostrar Maior e Menor Elemento da Matriz e Suas Posições * * * \n")
 		
 		inteiro nrMaior = matriz[0][0] , nrMenor = matriz[0][0], line[2], colum[2], prossiga
 		
@@ -267,7 +267,7 @@ programa
 	funcao criarMatrizCubica(inteiro matriz[][]){
 
 		limpa()
-		escreva("* * * Matriz Cubica * * * \n")
+		escreva("* * * Criar Matriz Cúbica da Original * * * \n")
 		
 		inteiro matrizAux[4][4], prossiga
 
@@ -292,7 +292,7 @@ programa
 	funcao exibirElementoCantoSupInf(inteiro matriz[][]){
 
 		limpa()
-		escreva(" * * * Elemento Canto Superior e Inferior * * *")
+		escreva(" * * * Mostrar Elemento Canto Superior Esquerdo e Canto Inferiror Direito * * *")
 		inteiro cantoSup, cantoInf , prossiga
 		
 		cantoSup = matriz[0][0]
@@ -313,7 +313,7 @@ programa
 	funcao somaElementosLinha(inteiro matriz[][]){
 		
 		limpa()
-		escreva(" * * * Somar Elementos de Uma Linha Informada * * *")
+		escreva(" * * * Mostrar Soma Da Linha Informada Pelo Usuário * * *")
 		inteiro linha, prossiga, sum = 0
 		
 		escreva("Matriz Original\n")
@@ -338,7 +338,7 @@ programa
 	funcao exibirLinhaColunaUsu(inteiro matriz[][]){
 		
 		limpa()
-		escreva(" * * * Exibir Elemento Coluna e Linha Informada * * *\n")
+		escreva(" * * * Mostrar o Valor do Elemento da Linha e Coluna Informada Pelo Usuário * * *\n")
 		inteiro linha, coluna, prossiga, sum = 0
 				
 
@@ -364,7 +364,8 @@ programa
 	}
 
 	funcao somarMatrizes(inteiro matriz[][]){
-
+		limpa()
+		escreva("* * * Gerar 2 Matrizes de Inteiros e Outra Com a Soma dos Elementos das Matrizes Originais \n")
 		inteiro newMatriz[4][4], sumMatriz[4][4], prossiga
 		
 		para(inteiro linha = 0; linha <= 3; linha++){
@@ -415,7 +416,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 9167; 
+ * @POSICAO-CURSOR = 8379; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
